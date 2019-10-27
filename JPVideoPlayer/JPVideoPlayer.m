@@ -236,7 +236,8 @@ static NSString *JPVideoPlayerURL = @"www.newpan.com";
     resourceLoader.delegate = self;
     
     // url instead of `[self composeFakeVideoURL]`, otherwise some urls can not play normally
-    AVURLAsset *videoURLAsset = [AVURLAsset URLAssetWithURL:[self composeFakeVideoURL] options:nil];
+    // AVURLAsset *videoURLAsset = [AVURLAsset URLAssetWithURL:[self composeFakeVideoURL] options:nil];
+    AVURLAsset *videoURLAsset = [AVURLAsset URLAssetWithURL:url options:nil];
     [videoURLAsset.resourceLoader setDelegate:resourceLoader queue:dispatch_get_main_queue()];
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:videoURLAsset];
     [self removePlayerItemDidPlayToEndObserver];
