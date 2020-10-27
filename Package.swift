@@ -7,7 +7,6 @@ let package = Package(
     name: "JPVideoPlayer",
     platforms: [.iOS(.v9)],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "JPVideoPlayer",
             targets: ["JPVideoPlayer"]),
@@ -17,8 +16,7 @@ let package = Package(
             name: "JPVideoPlayer",
             path: "JPVideoPlayer",
             resources: [.process("JPVideoPlayer.bundle")],
-            publicHeadersPath: "JPVideoPlayer/include",
-            cSettings: [.define("JP_USEING_SPM")]
+            cSettings: [.define("JP_USEING_SPM"), .headerSearchPath("")]
             )
     ]
 )
