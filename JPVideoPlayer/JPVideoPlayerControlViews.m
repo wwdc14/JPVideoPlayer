@@ -149,7 +149,7 @@ nearestViewControllerInViewTree:(UIViewController *_Nullable)nearestViewControll
 #pragma mark - Private
 
 - (void)_setup {
-    NSBundle *bundle = [NSBundle bundleForClass:[JPVideoPlayer class]];
+    NSBundle *bundle = SWIFTPM_MODULE_BUNDLE;//[NSBundle bundleForClass:[JPVideoPlayer class]];
     NSString *bundlePath = [bundle pathForResource:@"JPVideoPlayer" ofType:@"bundle"];
 
     self.trackProgressView = ({
@@ -441,7 +441,7 @@ nearestViewControllerInViewTree:(UIViewController *_Nullable)nearestViewControll
 }
 
 - (void)_setup {
-    NSBundle *bundle = [NSBundle bundleForClass:[JPVideoPlayer class]];
+    NSBundle *bundle = SWIFTPM_MODULE_BUNDLE;//[NSBundle bundleForClass:[JPVideoPlayer class]];
     NSString *bundlePath = [bundle pathForResource:@"JPVideoPlayer" ofType:@"bundle"];
 
     self.backgroundColor = [UIColor clearColor];
@@ -613,7 +613,7 @@ nearestViewControllerInViewTree:(UIViewController *_Nullable)nearestViewControll
 #pragma mark - Private
 
 - (void)_setup {
-    NSBundle *bundle = [NSBundle bundleForClass:[JPVideoPlayer class]];
+    NSBundle *bundle = SWIFTPM_MODULE_BUNDLE;
     NSString *bundlePath = [bundle pathForResource:@"JPVideoPlayer" ofType:@"bundle"];
 
     self.blurImageView = ({
