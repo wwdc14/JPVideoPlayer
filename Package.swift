@@ -8,13 +8,13 @@ let package = Package(
     platforms: [.iOS(.v9)],
     products: [
         .library(
-            name: "JPVideoPlayer",
-            targets: ["JPVideoPlayer"]),
+            name: "VideoPlayer",
+            targets: ["VideoPlayer"]),
     ],
     targets: [
         .target(
-            name: "JPVideoPlayer",
-            path: "JPVideoPlayer",
+            name: "VideoPlayer",
+            path: "VideoPlayer",
             resources: [.process("JPVideoPlayer.bundle")],
             cSettings: [.define("JP_USEING_SPM"), .headerSearchPath("")]
             )
