@@ -14,7 +14,7 @@ let package = Package(
     targets: [
         .target(
             name: "JVideoPlayer",
-            path: "JVideoPlayer",
+            path: "JPVideoPlayer",
             resources: [.process("JPVideoPlayer.bundle")],
             cSettings: [.define("JP_USEING_SPM"), .headerSearchPath("")]
             )
