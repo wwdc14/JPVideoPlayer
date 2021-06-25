@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "JPVideoPlayer",
+    name: "JVideoPlayer",
     platforms: [.iOS(.v9)],
     products: [
         .library(
-            name: "VideoPlayer",
-            targets: ["VideoPlayer"]),
+            name: "JVideoPlayer",
+            targets: ["JVideoPlayer"]),
     ],
     targets: [
         .target(
-            name: "VideoPlayer",
-            path: "VideoPlayer",
+            name: "JVideoPlayer",
+            path: "JVideoPlayer",
             resources: [.process("JPVideoPlayer.bundle")],
             cSettings: [.define("JP_USEING_SPM"), .headerSearchPath("")]
             )
